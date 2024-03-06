@@ -1,0 +1,18 @@
+[{
+    "title": "Your title here",
+    "author": "Author name",
+    "published": "Date",
+    "pgCount": "Pages",
+    "synopsis": "A couple of sentences",
+    "genre": "Your genre here",
+    "audience": "Adult fiction"
+},
+{
+    "title": "Another title here",
+    "author": "Author name",
+    "published": "Date",
+    "pgCount": "Pages",
+    "synopsis": "A couple of sentences",
+    "genre": "Your genre here",
+    "audience": "Juvenile fiction"
+}]
