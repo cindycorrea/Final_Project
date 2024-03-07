@@ -1,0 +1,147 @@
+[
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "published": 1997,
+    "pgCount": 223,
+    "synopsis": "Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths.",
+    "genre": "Fantasy",
+    "audience": "All ages"
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "published": 1998,
+    "pgCount": 251,
+    "synopsis": "A mysterious elf tells Harry to expect trouble during his second year at Hogwarts, but nothing can prepare him for trees that fight back, flying cars, spiders that talk and deadly warnings written in blood on the walls of the school.",
+    "genre": "Fantasy",
+    "audience": "All ages"
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "J.K. Rowling",
+    "published": 1999,
+    "pgCount": 317,
+    "synopsis": "Harry Potter's third year at Hogwarts starts off badly when he learns deranged killer Sirius Black has escaped from Azkaban prison and is bent on murdering the teenage wizard. While Hermione's cat torments Ron's sickly rat, causing a rift among the trio, a swarm of nasty Dementors is sent to protect the school from Black. A mysterious new teacher helps Harry learn to defend himself, but what is his secret tie to Sirius Black?",
+    "genre": "Fantasy",
+    "audience": "All ages"
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire",
+    "author": "J.K. Rowling",
+    "published": 2000,
+    "pgCount": 636,
+    "synopsis": "Harry returning for his fourth year at Hogwarts School of Witchcraft and Wizardry, along with his friends, Ron and Hermione. There is an upcoming tournament between the three major schools of magic, with one participant selected from each school by the Goblet of Fire. When Harry's name is drawn, even though he is not eligible and is a fourth player, he must compete in the dangerous contest.",
+    "genre": "Fantasy",
+    "audience": "All ages"
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "author": "J.K. Rowling",
+    "published": 2003,
+    "pgCount": 896,
+    "synopsis": "Now in his fifth year at Hogwarts, Harry learns that many in the wizarding community do not know the truth of his encounter with Lord Voldemort. Cornelius Fudge, minister of Magic, appoints his toady, Dolores Umbridge, as Defense Against the Dark Arts teacher, for he fears that professor Dumbledore will take his job. But her teaching is deficient and her methods, cruel, so Harry prepares a group of students to defend the school against a rising tide of evil.",
+    "genre": "Fantasy",
+    "audience": "All ages"
+  },
+  {
+    "title": "Harry Potter and the Half-Blood Prince",
+    "author": "J.K. Rowling",
+    "published": 2005,
+    "pgCount": 607,
+    "synopsis": "As Death Eaters wreak havoc in both Muggle and Wizard worlds, Hogwarts is no longer a safe haven for students. Though Harry suspects there are new dangers lurking within the castle walls, Dumbledore is more intent than ever on preparing the young wizard for the final battle with Voldemort. Meanwhile, teenage hormones run rampant through Hogwarts, presenting a different sort of danger. Love may be in the air, but tragedy looms, and Hogwarts may never be the same again.",
+    "genre": "Fantasy",
+    "audience": "All ages"
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows",
+    "author": "J.K. Rowling",
+    "published": 2007,
+    "pgCount": 784,
+    "synopsis": "Without the guidance and protection of their professors, Harry, Ron and Hermione begin a mission to destroy the Horcruxes, the sources of Voldemort's immortality. Though they must rely on one another more than ever, dark forces threaten to tear them apart. Voldemort's Death Eaters have seized control of the Ministry of Magic and Hogwarts, and they are searching for Harry -- even as he and his friends prepare for the ultimate showdown.",
+    "genre": "Fantasy",
+    "audience": "All ages"
+  },
+  {
+    "title": "Fablehaven",
+    "author": "Brandon Mull",
+    "published": 2006,
+    "pgCount": 368,
+    "synopsis": "In FABLEHAVEN, 13-year-old Kendra and 11-year-old Seth discover that their grandfather is the caretaker of a sanctuary full of mythical creatures. Ancient laws keep the peace and preserve this gated woods, called Fablehaven, as one of the last strongholds of true magic in the world.",
+    "genre": "Fantasy",
+    "audience": "Juvenile fiction"
+  },
+  {
+    "title": "Gregor the Overlander",
+    "author": "Suzanne Collins",
+    "published": 2003,
+    "pgCount": 336,
+    "synopsis": "When young Gregor falls through a grate in the laundry room of his apartment building, he hurtles into the dark Underland, where spiders, rats, cockroaches coexist uneasily with humans. This strange world is on the brink of war, and Gregor's arrival is no accident.",
+    "genre": "Fantasy",
+    "audience": "Juvenile fiction"
+  },
+  {
+    "title": "Cinder",
+    "author": "Marissa Meyer",
+    "published": 2011,
+    "pgCount": 448,
+    "synopsis": "She's a second-class citizen with a mysterious past, reviled by her stepmother and blamed for her stepsister's illness. But when her life becomes intertwined with the handsome Prince Kai's, she suddenly finds herself at the center of an intergalactic struggle, and a forbidden attraction.",
+    "genre": "Fantasy",
+    "audience": "Teen fiction"
+  },
+  {
+    "title": "Charlie and the Chocolate Factory",
+    "author": "Roald Dahl",
+    "published": 1964,
+    "pgCount": 192,
+    "synopsis": "The darkly funny novel features Charlie Bucket, a boy living in poverty with his parents and grandparents. They live in a town that is home to a famous chocolate factory. Charlie is one of five children who win admission to tour the mysterious chocolate factory, alongside its owner Willy Wonka.",
+    "genre": "Fantasy",
+    "audience": "Juvenile fiction"
+  },
+  {
+    "title": "Alice in Wonderland",
+    "author": "Lewis Carroll",
+    "published": 1865,
+    "pgCount": 70,
+    "synopsis": "A young girl named Alice is the main character in Alice's Adventures in Wonderland. She falls asleep and dreams that she follows a White Rabbit down a rabbit hole. She has many wondrous, often bizarre adventures. Alice often changes size unexpectedly, growing as tall as a house and shrinking to three inches.",
+    "genre": "Fantasy",
+    "audience": "Juvenile fiction"
+  },
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "published": 2010,
+    "pgCount": 384,
+    "synopsis": "The Hunger Games follows Katniss Everdeen as she is forced to fight in a yearly gladiatorial contest. Katniss's struggle and ultimate survival, along with Peeta Mellark's, sparks a revolution to overthrow the tyrannical Capitol.",
+    "genre": "Fantasy",
+    "audience": "Young adult fiction"
+  },
+  {
+    "title": "Tyler Meyer",
+    "author": "Mariano Correa V",
+    "published": 2023,
+    "pgCount": 101,
+    "synopsis": "An account of Tyler Meyer's SCC Training (Supree Celestial Community). Tyler meets a myriad a characters that help and hinder his beginning months in the SCC.",
+    "genre": "Fantasy",
+    "audience": "Juvenile fiction"
+  },
+  {
+    "title": "The Fellowship of the Rings",
+    "author": "John Ronald Reuel Tolkien",
+    "published": 1954,
+    "pgCount": 423,
+    "synopsis": "Frodo Baggins inherits the One Ring and embarks on a perilous journey to destroy it. Alongside his friends and allies, Frodo faces numerous challenges, including the pursuit of Sauron's servants, the Black Riders.",
+    "genre": "Your genre here",
+    "audience": "Juvenile fiction"
+  },
+  {
+    "title": "The Fellowship of the Rings",
+    "author": "John Ronald Reuel Tolkien",
+    "published": 1956,
+    "pgCount": 4700,
+    "synopsis": "Frodo Baggins inherits the One Ring and embarks on a perilous journey to destroy it. Alongside his friends and allies, Frodo faces numerous challenges, including the pursuit of Sauron's servants, the Black Riders.",
+    "genre": "Your genre here",
+    "audience": "Juvenile fiction"
+  }
+
+]
