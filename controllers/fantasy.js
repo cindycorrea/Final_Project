@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const test = async (request, response) => {
     console.log("This is the test.")
     response.json('This is the second test function.')
+
 }
 
 module.exports = { test }
