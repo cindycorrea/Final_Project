@@ -3,9 +3,8 @@ const mongoose = require("mongoose");
 // const Fantasy = require("../mongoose/fantasy");
 
 const test = async (request, response) => {
-    console.log("This is the test.")
-    response.json('This is the second test function.')
+  console.log("This is the test.");
+  response.json("This is the second test function.");
+};
 
-}
-
-module.exports = { test }
+module.exports = { test };
