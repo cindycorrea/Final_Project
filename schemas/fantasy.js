@@ -29,7 +29,7 @@ const fantasySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-});
+}, { collection: 'fantasy' });
 
 const Fantasy = mongoose.model("Fantasy", fantasySchema);
 

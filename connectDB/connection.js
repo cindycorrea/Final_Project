@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-mongoose.connect(process.env.DB_URL);
+mongoose.connect(process.env.URI);
 console.log("DB Connected!");
 
 // Close Mongoose connection on SIGINT (Ctrl+C)
