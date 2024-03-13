@@ -5,7 +5,7 @@ const doc = {
     title: 'A Little Library',
     description: 'A small database for a little library.'
   },
-  host: 'https://final-project-21h7.onrender.com',
+  host: 'final-project-21h7.onrender.com',
   schemes: ['https']
 };
 
