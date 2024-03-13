@@ -5,7 +5,8 @@ const doc = {
     title: 'A Little Library',
     description: 'A small database for a little library.'
   },
-  host: 'localhost:3000'
+  host: 'https://final-project-21h7.onrender.com',
+  schemes: ['https']
 };
 
 const outputFile = './swagger-output.json';
