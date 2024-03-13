@@ -29,8 +29,8 @@ const mysterySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-});
+}, { collection: 'mystery' });
 
-const Mystery = mongoose.model("Fantasy", mysterySchema);
+const Mystery = mongoose.model("Mystery", mysterySchema);
 
 module.exports = Mystery;
