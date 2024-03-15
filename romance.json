@@ -1,11 +1,47 @@
 [
-    {
+  {
       "title": "Twilight",
-      "author": "Stephanie Meyer",
+      "author": "Stephenie Meyer",
       "published": 2005,
       "pgCount": 498,
-      "synopsis": "Twilight is about a girl who moves from Phoenix to Forks to live with her dad and falls in love this attractive guy who turns out to be a vampire.",
-      "genre": "Romance",
+      "synopsis": "Twilight follows the story of Bella Swan, a teenage girl who moves to Forks, Washington, and falls in love with Edward Cullen, a mysterious and captivating vampire. As their romance unfolds, Bella must navigate the complexities of being in love with a creature of the night while also facing the dangers that come with his world.",
+      "genre": "Paranormal Romance",
       "audience": "YA"
-    }
+  },
+  {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "published": 1813,
+      "pgCount": 279,
+      "synopsis": "Pride and Prejudice follows the tumultuous relationship between Elizabeth Bennet and Mr. Darcy in Georgian England.",
+      "genre": "Regency Romance",
+      "audience": "Adult"
+  },
+  {
+      "title": "Sense and Sensibility",
+      "author": "Jane Austen",
+      "published": 1811,
+      "pgCount": 352,
+      "synopsis": "Sense and Sensibility tells the story of the Dashwood sisters, Elinor and Marianne, as they navigate love, heartbreak, and societal expectations in early 19th-century England.",
+      "genre": "Regency Romance",
+      "audience": "Adult"
+  },
+  {
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "published": 1847,
+      "pgCount": 624,
+      "synopsis": "Jane Eyre is the story of a young orphaned girl who becomes a governess and falls in love with her brooding employer, Mr. Rochester, while uncovering dark secrets at Thornfield Hall.",
+      "genre": "Classic Romance",
+      "audience": "Adult"
+  },
+  {
+      "title": "Emma",
+      "author": "Jane Austen",
+      "published": 1815,
+      "pgCount": 474,
+      "synopsis": "Emma Woodhouse, a young woman with a penchant for matchmaking, meddles in the romantic affairs of those around her, but her efforts often lead to unintended consequences, especially for her own heart.",
+      "genre": "Regency Romance",
+      "audience": "Adult"
+  }
 ]
