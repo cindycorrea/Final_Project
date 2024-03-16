@@ -40,7 +40,7 @@ app.get("/profile", requiresAuth(), (req, res) => {
 // app.use("/", require("./routes/romance"));
 app.use("/", require("./routes/fantasy"));
 app.use("/", require("./routes/mystery"));
-// app.use("/", require("./routes/historical-fiction"));
+app.use("/", require("./routes/historical-fiction"));
 
 // Swagger route for API documentation
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
