@@ -1,0 +1,21 @@
+### Historical Fiction get list
+GET http://localhost:3000/historical-fiction
+
+### Historical Fiction get one by ID
+GET http://localhost:3000/historical-fiction/65f1cef69717494ae0e71626
+
+
+### Historical Fiction add new book
+POST http://localhost:3000/historical-fiction
+content-type: application/json
+
+{
+    "title": "My Lady Jane",
+    "author": "Cynthia Hand",
+    "published": 2017,
+    "pgCount": 512,
+    "synopsis": "At age 16, Lady Jane Grey is about to be married off to a stranger and caught up in a conspiracy to rob her cousin, King Edward, of his throne. Instead, Jane gets to be the Queen of England. Like that could go wrong.",
+    "genre": "Historical Fiction",
+    "audience": "YA"
+}
+

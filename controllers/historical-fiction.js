@@ -23,7 +23,27 @@ const oneHF = async (req, res, next) => {
   }
 };
 
+const newHF = async (req, res, next) => {
+  const newBook = {
+    title: req.body.title,
+    author: req.body.author,
+    published: req.body.published,
+    pgCount: req.body.pgCount,
+    synopsis: req.body.synopsis,
+    genre: req.body.genre,
+    audience: req.body.audience,
+  };
+  try {
+    const createdHF = await HFiction.create(newBook);
+    res.status(201).send(`${createdHF.title} added with _id: ${createdHF._id}`);
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+};
+
 module.exports = {
   listHF,
   oneHF,
+  newHF,
 };
