@@ -32,3 +32,6 @@ content-type: application/json
     "genre": "Historical Fiction",
     "audience": "YA"
 }
+
+### Historical Fiction delete book
+DELETE http://localhost:3000/historical-fiction/***

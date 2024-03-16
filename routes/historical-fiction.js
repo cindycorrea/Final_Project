@@ -5,10 +5,10 @@ const { requiresAuth } = require("express-openid-connect");
 routes.get("/historical-fiction", hfController.listHF);
 routes.get("/historical-fiction/:id", hfController.oneHF);
 
-routes.post("/historical-fiction", hfController.newHF); // removed for testing: requiresAuth(),
+routes.post("/historical-fiction", requiresAuth(), hfController.newHF); // removed for testing:
 
-routes.put("/historical-fiction/:id", hfController.updateHF); // removed for testing: requiresAuth(),
+routes.put("/historical-fiction/:id", requiresAuth(), hfController.updateHF); // removed for testing:
 
-// routes.delete("/historical-fiction/:id", hfController.deleteHF);// removed for testing: requiresAuth(),
+routes.delete("/historical-fiction/:id", requiresAuth(), hfController.deleteHF); // removed for testing:
 
 module.exports = routes;
