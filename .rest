@@ -1,5 +1,8 @@
 ###
 GET http://localhost:3000/fantasy
 
-###
+### Historical Fiction get list
 GET http://localhost:3000/historical-fiction
+
+### Historical Fiction get one by ID
+GET http://localhost:3000/historical-fiction/65f1cef69717494ae0e71626
