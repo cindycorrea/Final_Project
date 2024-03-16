@@ -57,7 +57,18 @@ const updateHF = async (req, res, next) => {
   };
   try {
     const update = await HFiction.findOneAndUpdate({ _id: hFId }, updatedBook);
-    res.status(204).send(`${update.title} has been updated.`);
+    res.status(204);
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+};
+
+const deleteHF = async (req, res, next) => {
+  const hFId = req.params.id;
+  try {
+    const remove = await HFiction.deleteOne({ _id: hFId });
+    res.status(200).send(`The requested book has been removed.`);
   } catch (error) {
     console.log(error);
     next(error);
@@ -69,4 +80,5 @@ module.exports = {
   oneHF,
   newHF,
   updateHF,
+  deleteHF,
 };
