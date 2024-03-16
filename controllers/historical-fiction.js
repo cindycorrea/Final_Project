@@ -42,8 +42,31 @@ const newHF = async (req, res, next) => {
   }
 };
 
+const updateHF = async (req, res, next) => {
+  const hFId = req.params.id;
+  const updatedBook = {
+    $set: {
+      title: req.body.title,
+      author: req.body.author,
+      published: req.body.published,
+      pgCount: req.body.pgCount,
+      synopsis: req.body.synopsis,
+      genre: req.body.genre,
+      audience: req.body.audience,
+    },
+  };
+  try {
+    const update = await HFiction.findOneAndUpdate({ _id: hFId }, updatedBook);
+    res.status(204).send(`${update.title} has been updated.`);
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
+};
+
 module.exports = {
   listHF,
   oneHF,
   newHF,
+  updateHF,
 };
