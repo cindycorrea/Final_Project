@@ -1,2 +1,5 @@
 ###
 GET http://localhost:3000/fantasy
+
+###
+GET http://localhost:3000/historical-fiction
