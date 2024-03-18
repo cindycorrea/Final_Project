@@ -1,2 +1,36 @@
 ###
 GET http://localhost:3000/fantasy
+
+###
+GET http://localhost:3000/fantasy/:id
+
+###
+POST http://localhost:3000/fantasy
+content-type: application/json
+
+{
+    "title": "The Grimm Legacy",
+    "author": "Polly Shulman",
+    "published": 2011,
+    "pgCount": 352,
+    "synopsis": "Elizabeth is obsessed with the Brothers Grimm, and when she lands a part-time job at the New York Circulating Material Repository, a library/museum that maintains a collection of historical objects, Elizabeth discovers magical items from the Grimm fairytales in the Repository's secret basement archive.",
+    "genre": "Fantasy",
+    "audience": "All ages"
+}
+
+###
+PUT http://localhost:3000/fantasy/65f863fea280589db8c59248
+content-type: application/json
+
+{
+    "title": "The Grimm Legacy",
+    "author": "Polly Shulman",
+    "published": 2015,
+    "pgCount": 352,
+    "synopsis": "Elizabeth is obsessed with the Brothers Grimm, and when she lands a part-time job at the New York Circulating Material Repository, a library/museum that maintains a collection of historical objects, Elizabeth discovers magical items from the Grimm fairytales in the Repository's secret basement archive.",
+    "genre": "Fantasy",
+    "audience": "All ages"
+}
+
+###
+DELETE http://localhost:3000/fantasy/65f863fea280589db8c59248
