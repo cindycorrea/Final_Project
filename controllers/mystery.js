@@ -28,7 +28,7 @@ const createMystery = async(request, response) => {
     response.status(500).json('Please try again.');
   }
 }
-
+// Update not working as intended //
 const updateMystery = async(request, response) => {
   const id = request.params.id;
   const book = Mystery({title: request.body.title, author: request.body.author, published: request.body.published, pgCount: request.body.pgCount, synopsis: request.body.synopsis, genre: request.body.genre, audience: request.body.audience});
