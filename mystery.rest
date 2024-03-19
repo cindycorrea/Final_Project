@@ -1,0 +1,36 @@
+###
+GET http://localhost:3000/mystery
+
+###
+GET http://localhost:3000/mystery/:id
+
+###
+POST http://localhost:3000/mystery
+content-type: application/json
+
+{
+    "title": "A Most Intruiging Lady: A Novel",
+    "author": "Sarah Ferguson",
+    "published": 2023,
+    "pgCount": 368,
+    "synopsis": "Pacy, romantic, and fun, A Most Intriguing Lady documents one remarkable woman’s ability to be both the perfect lady, and a perfectly talented detective...and, of course, to find love too.",
+    "genre": "Mystery",
+    "audience": "All ages"
+}
+
+###
+PUT http://localhost:3000/mystery/
+content-type: application/json
+
+{
+    "title": "A Most Intruiging Lady: A Novel",
+    "author": "Sarah Ferguson",
+    "published": 2023,
+    "pgCount": 368,
+    "synopsis": "Pacy, romantic, and fun, A Most Intriguing Lady documents one remarkable woman’s ability to be both the perfect lady, and a perfectly talented detective...and, of course, to find love too.",
+    "genre": "Mystery",
+    "audience": "All ages"
+}
+
+###
+DELETE http://localhost:3000/mystery/
