@@ -58,7 +58,7 @@ const updateRomance = async (request, response, next) => {
   };
   try {
     await Romance.findOneAndUpdate({ _id: romanceID }, updatedBook);
-    response.status(204);
+    response.status(204).send();
   } catch (error) {
     console.log(error);
     next(error);
