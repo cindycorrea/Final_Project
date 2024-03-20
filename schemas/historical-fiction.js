@@ -13,10 +13,13 @@ const historical_fictionSchema = new mongoose.Schema(
     published: {
       type: Number,
       required: true,
+      min: [1000],
+      maxlength: [4],
     },
     pgCount: {
       type: Number,
       required: true,
+      min: [1],
     },
     synopsis: {
       type: String,

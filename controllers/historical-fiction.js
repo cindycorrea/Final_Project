@@ -37,8 +37,16 @@ const newHF = async (req, res, next) => {
     const createdHF = await HFiction.create(newBook);
     res.status(201).send(`${createdHF.title} added with _id: ${createdHF._id}`);
   } catch (error) {
-    console.log(error);
-    next(error);
+    if (error.name === "ValidationError") {
+      console.error("Validation error:", error.message);
+      res.status(400).json({
+        message: "Bad request. Validation failed.",
+        error: error.message,
+      });
+    } else {
+      console.error(error);
+      res.status(500).json({ message: "Server Error" });
+    }
   }
 };
 
@@ -59,8 +67,16 @@ const updateHF = async (req, res, next) => {
     const update = await HFiction.findOneAndUpdate({ _id: hFId }, updatedBook);
     res.status(204).send();
   } catch (error) {
-    console.log(error);
-    next(error);
+    if (error.name === "ValidationError") {
+      console.error("Validation error:", error.message);
+      res.status(400).json({
+        message: "Bad request. Validation failed.",
+        error: error.message,
+      });
+    } else {
+      console.error(error);
+      res.status(500).json({ message: "Server Error" });
+    }
   }
 };
 
