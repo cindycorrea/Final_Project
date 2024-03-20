@@ -47,13 +47,13 @@ const updateRomance = async (request, response, next) => {
   const romanceID = request.params.id;
   const updatedBook = {
     $set: {
-      title: req.body.title,
-      author: req.body.author,
-      published: req.body.published,
-      pgCount: req.body.pgCount,
-      synopsis: req.body.synopsis,
-      genre: req.body.genre,
-      audience: req.body.audience,
+      title: request.body.title,
+      author: request.body.author,
+      published: request.body.published,
+      pgCount: request.body.pgCount,
+      synopsis: request.body.synopsis,
+      genre: request.body.genre,
+      audience: request.body.audience,
     },
   };
   try {
