@@ -46,7 +46,14 @@ const newFantasy = async (request, response) => {
     response.status(201).json(result._id);
   } catch (error) {
     console.error("Error: ", error);
-    response.status(500).json({ error: "Did not insert builder" });
+
+    // Check if error is a Mongoose validation error
+    if (error.name === "ValidationError" || error.name === "CastError") {
+      // Handle validation error separately
+      return response.status(400).json(error.message); // Respond with 400 Bad Request
+    }
+
+    response.status(500).json({ error: "Internal Server Error" });
   }
 };
 
@@ -79,6 +86,8 @@ const updateFantasy = async (request, response) => {
     if (!result) {
       return response.status(404).json("Fantasy novel not found.");
     }
+
+    response.status(204).send();
   } catch (error) {
     console.error("Here is the error: ", error);
 
@@ -111,15 +120,8 @@ const deleteFantasy = async (request, response) => {
     console.log(`Fantasy ${result.title} has been deleted.`);
     response.status(200).json(`${result.title} has been deleted.`);
   } catch (error) {
-    console.error("Error: ", error);
-
-    // Check if error is a Mongoose validation error
-    if (error.name === "ValidationError" || error.name === "CastError") {
-      // Handle validation error separately
-      return response.status(400).json(error.message); // Respond with 400 Bad Request
-    }
-
-    response.status(500).json({ error: "Internal Server Error" });
+    console.error("Error:", error);
+    response.status(500).json({ error: "Cannot delete the book" });
   }
 };
 
