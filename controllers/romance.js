@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 const mongoDB = require("../connectDB/connection");
-const romance = require("../schemas/romance");
+const Romance = require("../schemas/romance");
 const { response } = require("express");
 
-const getAllRomance = async (response, next) => {
+const getAllRomance = async (request, response, next) => {
   try {
-    const romance = await romance.find();
+    const romance = await Romance.find();
     response.json(romance);
   } catch (error) {
     console.log(error);
@@ -16,7 +16,7 @@ const getAllRomance = async (response, next) => {
 const oneRomance = async (request, response, next) => {
   const romanceID = request.params.id;
   try {
-    const result = await romance.findById(romanceID);
+    const result = await Romance.findById(romanceID);
     response.send(result);
   } catch (error) {
     console.log(error);
@@ -35,8 +35,8 @@ const newRomance = async (request, response, next) => {
     audience: request.body.audience,
   };
   try {
-    const result = await romance.create(newRomance);
-    res.status(201).send(`${result.title} added with _id: ${result._id}`);
+    const result = await Romance.create(newRomance);
+    response.status(201).send(`${result.title} added with _id: ${result._id}`);
   } catch (error) {
     console.log(error);
     next(error);
@@ -57,7 +57,7 @@ const updateRomance = async (request, response, next) => {
     },
   };
   try {
-    await romance.findOneAndUpdate({ _id: romanceID }, updatedBook);
+    await Romance.findOneAndUpdate({ _id: romanceID }, updatedBook);
     response.status(204);
   } catch (error) {
     console.log(error);
@@ -67,9 +67,10 @@ const updateRomance = async (request, response, next) => {
 
 const deleteRomance = async (request, response, next) => {
     const romanceID = request.params.id;
+    
     try {
-      const deletedBook = await HFiction.deleteOne({ _id: romanceID });
-      res.status(200).send(`${deletedBook.title} deleted with _id: ${deletedBook._id}`);
+      const deletedBook = await Romance.findByIdAndDelete(romanceID);
+      response.status(200).send(`${deletedBook.title} deleted with _id: ${romanceID}`);
     } catch (error) {
       console.log(error);
       next(error);
