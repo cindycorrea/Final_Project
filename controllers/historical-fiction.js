@@ -57,7 +57,7 @@ const updateHF = async (req, res, next) => {
   };
   try {
     const update = await HFiction.findOneAndUpdate({ _id: hFId }, updatedBook);
-    res.status(204);
+    res.status(204).send();
   } catch (error) {
     console.log(error);
     next(error);

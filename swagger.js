@@ -17,6 +17,7 @@ const routes = [
   "./routes/fantasy.js",
   "./routes/mystery.js",
   "./routes/historical-fiction.js",
+  "./routes/romance.js"
 ];
 
 /* NOTE: If you are using the express Router, you must pass in the 'routes' only the 
