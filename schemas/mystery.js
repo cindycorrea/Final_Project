@@ -13,10 +13,14 @@ const mysterySchema = new mongoose.Schema(
     published: {
       type: Number,
       required: true,
+      min: [1000],
+      max: [2100],
+      maxlength: [4],
     },
     pgCount: {
       type: Number,
       required: true,
+      min: [1],
     },
     synopsis: {
       type: String,
@@ -31,7 +35,8 @@ const mysterySchema = new mongoose.Schema(
       required: true,
     },
   },
-  { collection: "mystery" }
+  { collection: "mystery" },
+  { versionKey: false }
 );
 
 const Mystery = mongoose.model("Mystery", mysterySchema);

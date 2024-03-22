@@ -53,11 +53,24 @@ const updateMystery = async (request, response) => {
     },
   };
   try {
-    const result = await Mystery.findOneAndUpdate({ _id: id }, book);
+    const result = await Mystery.findOneAndUpdate({ _id: id }, book, {
+      runValidators: true,
+    });
+    if (!result) {
+      return response.status(404).send("Requested book not found.");
+    }
     response.status(204).send();
   } catch (error) {
-    console.error("Error:", error);
-    response.status(500).json("Must be a valid id");
+    if (error.name === "ValidationError") {
+      console.error("Validation error:", error.message);
+      res.status(400).json({
+        message: "Bad request. Validation failed.",
+        error: error.message,
+      });
+    } else {
+      console.error(error);
+      res.status(500).json({ message: "Couldn't update the book." });
+    }
   }
 };
 

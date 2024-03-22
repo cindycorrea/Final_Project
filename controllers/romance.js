@@ -57,24 +57,43 @@ const updateRomance = async (request, response, next) => {
     },
   };
   try {
-    await Romance.findOneAndUpdate({ _id: romanceID }, updatedBook);
+    const update = await Romance.findOneAndUpdate(
+      { _id: romanceID },
+      updatedBook,
+      {
+        runValidators: true,
+      }
+    );
+    if (!update) {
+      return res.status(404).send("Requested book not found.");
+    }
     response.status(204).send();
   } catch (error) {
-    console.log(error);
-    next(error);
+    if (error.name === "ValidationError") {
+      console.error("Validation error:", error.message);
+      res.status(400).json({
+        message: "Bad request. Validation failed.",
+        error: error.message,
+      });
+    } else {
+      console.error(error);
+      res.status(500).json({ message: "Couldn't update the book." });
+    }
   }
 };
 
 const deleteRomance = async (request, response, next) => {
-    const romanceID = request.params.id;
-    
-    try {
-      const deletedBook = await Romance.findByIdAndDelete(romanceID);
-      response.status(200).send(`${deletedBook.title} deleted with _id: ${romanceID}`);
-    } catch (error) {
-      console.log(error);
-      next(error);
-    }
+  const romanceID = request.params.id;
+
+  try {
+    const deletedBook = await Romance.findByIdAndDelete(romanceID);
+    response
+      .status(200)
+      .send(`${deletedBook.title} deleted with _id: ${romanceID}`);
+  } catch (error) {
+    console.log(error);
+    next(error);
+  }
 };
 
 module.exports = {
