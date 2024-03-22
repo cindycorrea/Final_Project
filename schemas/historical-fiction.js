@@ -14,6 +14,7 @@ const historical_fictionSchema = new mongoose.Schema(
       type: Number,
       required: true,
       min: [1000],
+      max: [2100],
       maxlength: [4],
     },
     pgCount: {
@@ -34,7 +35,8 @@ const historical_fictionSchema = new mongoose.Schema(
       required: true,
     },
   },
-  { collection: "historical_fiction" }
+  { collection: "historical_fiction" },
+  { versionKey: false }
 );
 
 const HFiction = mongoose.model("HFiction", historical_fictionSchema);

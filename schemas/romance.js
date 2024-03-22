@@ -13,10 +13,14 @@ const romanceSchema = new mongoose.Schema(
     published: {
       type: Number,
       required: true,
+      min: [1000],
+      max: [2100],
+      maxlength: [4],
     },
     pgCount: {
       type: Number,
       required: true,
+      min: [1],
     },
     synopsis: {
       type: String,
@@ -31,7 +35,8 @@ const romanceSchema = new mongoose.Schema(
       required: true,
     },
   },
-  { collection: "romance" }
+  { collection: "romance" },
+  { versionKey: false }
 );
 
 const Romance = mongoose.model("Romance", romanceSchema);

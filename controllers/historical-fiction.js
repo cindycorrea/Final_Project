@@ -64,7 +64,12 @@ const updateHF = async (req, res, next) => {
     },
   };
   try {
-    const update = await HFiction.findOneAndUpdate({ _id: hFId }, updatedBook);
+    const update = await HFiction.findOneAndUpdate({ _id: hFId }, updatedBook, {
+      runValidators: true,
+    });
+    if (!update) {
+      return res.status(404).send("Requested book not found.");
+    }
     res.status(204).send();
   } catch (error) {
     if (error.name === "ValidationError") {
@@ -75,7 +80,7 @@ const updateHF = async (req, res, next) => {
       });
     } else {
       console.error(error);
-      res.status(500).json({ message: "Server Error" });
+      res.status(500).json({ message: "Couldn't update the book." });
     }
   }
 };
