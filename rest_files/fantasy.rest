@@ -19,7 +19,7 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:3000/fantasy/65f863fea280589db8c59248
+PUT http://localhost:3000/fantasy/:id
 content-type: application/json
 
 {
@@ -33,4 +33,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/fantasy/65f863fea280589db8c59248
+DELETE http://localhost:3000/fantasy/:id
