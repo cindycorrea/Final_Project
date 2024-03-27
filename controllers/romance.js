@@ -13,14 +13,14 @@ const getAllRomance = async (request, response, next) => {
   }
 };
 
-const oneRomance = async (request, response, next) => {
+const oneRomance = async (request, response) => {
   const romanceID = request.params.id;
   try {
     const result = await Romance.findById(romanceID);
-    response.send(result);
+    response.json(result);
   } catch (error) {
     console.log(error);
-    next(error);
+    response.status(500).json({ error: "Cannot fetch the book" });
   }
 };
 
