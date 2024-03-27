@@ -5,7 +5,7 @@ const { response } = require("express");
 
 const getAllFantasy = async (request, response) => {
   const fantasy = await Fantasy.find();
-  response.json(fantasy);
+  response.send(fantasy);
 };
 
 const getFantasy = async (request, response) => {

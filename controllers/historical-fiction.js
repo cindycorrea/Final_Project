@@ -8,18 +8,17 @@ const listHF = async (req, res, next) => {
     res.send(hFBooks);
   } catch (error) {
     console.log(error);
-    next(error);
   }
 };
 
-const oneHF = async (req, res, next) => {
+const oneHF = async (req, res) => {
   const hfId = req.params.id;
   try {
     const result = await HFiction.findById(hfId);
-    res.send(result);
+    res.json(result);
   } catch (error) {
     console.log(error);
-    next(error);
+    res.status(500).json({ error: "Cannot fetch the book" });
   }
 };
 
